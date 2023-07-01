@@ -1,0 +1,22 @@
+{
+  "name": "weft-web-site",
+  "version": "1.0.0",
+  "description": "Weft finance website",
+  "scripts": {
+    "compile-css": "sass src/styles/styles.scss public/styles.css",
+    "watch-css": "sass --watch src/styles/styles.scss public/styles.css"
+  },
+  "keywords": [
+    "blockchain",
+    "lending",
+    "borrowing",
+    "radix",
+    "crypto",
+    "finance"
+  ],
+  "author": "Weft Team",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.63.6"
+  }
+}

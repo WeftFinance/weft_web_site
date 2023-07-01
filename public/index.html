@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Weft</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Weft Finance">
+    <meta name="robots" content="index,follow">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicons/favicon.svg">
+    <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3 mb-3 bg-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="assets/images/Logo_weft_finance_green.svg" alt="Weft logo" role="img"
+                        aria-label="weft logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="idHeaderNavbar" class="navbar-nav d-flex justify-content-between flex-grow-1">
+                        <li class="nav-item ms-auto">
+                            <a href="#home" class="nav-link w-text-color-default text-decoration-none active"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#aboutUs" class="nav-link w-text-color-default text-decoration-none">About us</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#howItWorks" class="nav-link w-text-color-default">How it works?</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#features" class="nav-link w-text-color-default">Features</a>
+                        </li>
+                        <li id="idLaunchApp" class="nav-item ms-auto">
+                            <a href="https://google.fr" target="_blank"
+                                class="nav-link btn btn-link w-text-color-default w-radius-box">Launch
+                                App</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-3">
+        <div id="home" class="row">
+            <div class="col-12 col-md-6">
+                <h2 class="col mb-5 font-family-poppins fw-bold">Welcome to a simple and secure place for Asset
+                    Lenders and
+                    Borrowers</h2>
+                <p class="w-color-blue-dark">Weft Finance is a decentralised lending and borrowing platform built on
+                    <a href="https://www.radixdlt.com/" target="_blank">RadixDLT</a>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 d-flex">
+                <div class="m-auto">
+                    <div class="text-center mb-2"><img src="assets/images/logo_weft_blue.svg" alt="Weft logo" role="img"
+                            aria-label="weft logo" />
+                    </div>
+                    <div id="idRadixBabylonCounterdown">
+                        <p class="text-center">dApp will be launched in</p>
+                        <div class="row">
+                            <div class="col d-flex flex-column">
+                                <span id="idCounterdownDays" class="counterdown"></span>
+                                <span>DAYS</span>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <span id="idCounterdownHours" class="counterdown"></span>
+                                <span>HOURS</span>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <span id="idCounterdownMinutes" class="counterdown"></span>
+                                <span>MINUTES</span>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <span id="idCounterdownSeconds" class="counterdown"></span>
+                                <span>SECONDS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutUs">About us</div>
+        <div id="howItWorks">How it works</div>
+        <div id="features">feature</div>
+    </main>
+    <footer class="border-top container py-3">
+        <div class="d-flex justify-content-between m-auo">
+            <div class="d-flex flex-column">
+                <div class="d-flex justify-content-between me-3">
+                    <div><a href="#" target="_blank" class="w-text-color-default text-decoration-none">Policy</a></div>
+                    <div><a href="#" target="_blank" class="w-text-color-default text-decoration-none">Terms</a></div>
+                    <div><a href="#" target="_blank" class="w-text-color-default text-decoration-none">Social
+                            networks</a></div>
+                </div>
+                <div class="mt-3">
+                    Copyright &copy; <span id="idYear"></span> Designed by Weft Team
+                </div>
+            </div>
+            <div>
+                <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="assets/images/logo_weft_finance_blue.svg" alt="Weft logo" role="img"
+                        aria-label="weft logo" />
+                </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("idYear").innerHTML = new Date().getFullYear();
+        // Set the date we're counting down to
+        var countDownDate = new Date("July 31, 2023").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance >= 0) {
+                document.getElementById("idCounterdownDays").innerHTML = days;
+                document.getElementById("idCounterdownHours").innerHTML = hours;
+                document.getElementById("idCounterdownMinutes").innerHTML = minutes;
+                document.getElementById("idCounterdownSeconds").innerHTML = seconds;
+            }
+            else {
+                document.getElementById("idRadixBabylonCounterdown").style.display = "none";
+            }
+        }, 1000);
+    </script>
+</body>
+
+</html>

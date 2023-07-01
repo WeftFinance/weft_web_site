@@ -1,0 +1,32 @@
+@import "variables";
+
+.w-radius-box {
+  border-radius: 0.625rem;
+  background: #fbfcff;
+  box-shadow: 0px 0px 40px 11px rgba(0, 0, 0, 0.07);
+}
+
+#idHeaderNavbar {
+  margin-left: 8rem;
+}
+
+#idLaunchApp {
+  width: 12.25rem;
+  height: 2.6875rem;
+}
+
+.bg-header {
+  background: rgba(255, 255, 255, 0.58);
+  box-shadow: 0px 8px 32px 0px rgba(219, 219, 235, 0.17);
+}
+
+.counterdown {
+  color: #5afbc4;
+  text-align: center;
+  font-size: 1.875rem;
+  font-family: "Poppins" !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
