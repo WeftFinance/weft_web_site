@@ -31,19 +31,19 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul id="idHeaderNavbar" class="navbar-nav d-flex justify-content-between flex-grow-1">
+                    <ul id="idHeaderNavbar" class="navbar-nav d-flex justify-content-between flex-grow-1 pe-2">
                         <li class="nav-item ms-auto">
                             <a href="#home" class="nav-link w-text-color-default text-decoration-none active"
                                 aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item ms-auto">
-                            <a href="#aboutUs" class="nav-link w-text-color-default text-decoration-none">About us</a>
                         </li>
                         <li class="nav-item ms-auto">
                             <a href="#howItWorks" class="nav-link w-text-color-default">How it works?</a>
                         </li>
                         <li class="nav-item ms-auto">
                             <a href="#features" class="nav-link w-text-color-default">Features</a>
+                        </li>
+                        <li class="nav-item ms-auto">
+                            <a href="#aboutUs" class="nav-link w-text-color-default text-decoration-none">About us</a>
                         </li>
                         <li id="idLaunchApp" class="nav-item ms-auto">
                             <a href="https://poc.Weft.finance" target="_blank"
@@ -78,19 +78,19 @@
                             <div class="row">
                                 <div class="col d-flex flex-column px-1">
                                     <span id="idCounterdownDays" class="counterdown"></span>
-                                    <span>DAYS</span>
+                                    <span class="fz-13">DAYS</span>
                                 </div>
                                 <div class="col d-flex flex-column px-1">
                                     <span id="idCounterdownHours" class="counterdown"></span>
-                                    <span>HOURS</span>
+                                    <span class="fz-13">HOURS</span>
                                 </div>
                                 <div class="col d-flex flex-column px-1">
                                     <span id="idCounterdownMinutes" class="counterdown"></span>
-                                    <span>MINUTES</span>
+                                    <span class="fz-13">MINUTES</span>
                                 </div>
                                 <div class="col d-flex flex-column px-1">
                                     <span id="idCounterdownSeconds" class="counterdown"></span>
-                                    <span>SECONDS</span>
+                                    <span class="fz-13">SECONDS</span>
                                 </div>
                             </div>
                             <div class="text-center mt-3">
@@ -102,14 +102,66 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5">
+            <div id="idHomeSlogan" class="row mt-5">
                 <img src="assets/images/slogan_weft.svg" alt="Weft slogan" class="m-auo" />
             </div>
         </div>
         </div>
-        <div id="aboutUs" class="mt-5 about-us">
+        <div id="howItWorks" class="mt-5">
+            <h1 class="w-text-color-default w-title-h2 text-center my-4">How it works</h1>
+            <div id="idHowItWorksImg" class="row">
+                <img src="assets/images/how_it_works_steps.svg" alt="Weft how it works" class="m-auo" />
+            </div>
+
+        </div>
+        <div id="features" class="mt-5 features">
+            <h1 class="w-text-color-default w-title-h2 text-center my-4">Features</h1>
+            <div class="bg-features row">
+                <div class="block-space">
+                    <div class="col-12 col-md-9 col-lg-7 col-xl-5">
+                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3"><span
+                                class="w-color-blue-dark">Wefty</span> to
+                            rock-n-roll !</h2>
+                        <div class="flex-wrap description">Wefty is the nickname of our NFT that represents both deposit
+                            and
+                            loan of
+                            a
+                            user. Any number of
+                            Wefties can be minted and they are transferable. That effectively decouple the account and
+                            our
+                            dApp.</div>
+                    </div>
+                </div>
+
+
+                <div class="block-space">
+                    <div class="col-10 col-md-8 col-lg-7 col-xl-5">
+                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3">Uncollaterized loan
+                            by <span class="w-color-green">delegation</span></h2>
+                        <div class="flex-wrap description">Wefties can be linked together in a Delegator-Delegatee
+                            relation.
+                            This
+                            allows uncollaterized loan for delegated Wefty. The delegator is able to set a debt ceiling
+                            for each delegatee by a fixed amount or by setting a maximum ratio relative to available
+                            collateral.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-space">
+                    <div class="col-10 col-md-8 col-lg-7 col-xl-5">
+                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3">Isolation mode, Efficiency
+                            mode and more ... All in <span class="w-color-pink">One Go !</span></h2>
+                        <div class="flex-wrap description">Flexible Collateral ratio configuration allowing borrowing
+                            power to not depend only on supplied asset but also on asset intended to be borrow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="aboutUs" class="my-5 about-us">
             <h1 class="w-text-color-default w-title-h2 text-center my-4">About us</h1>
-            <div class="w-radius-box p-5">
+            <div class="w-radius-box p-3 p-md-4 p-lg-5">
                 <div class="row">
                     <div class="col-12 col-md-8">
                         <div class="mb-4">
@@ -265,73 +317,17 @@
         </div>
         </div>
         </div>
-        <div id="howItWorks" class="mt-5">
-            <h1 class="w-text-color-default w-title-h2 text-center my-4">How it works</h1>
-            <div id="idHowItWorksImg" class="row">
-                <img src="assets/images/how_it_works_steps.svg" alt="Weft how it works" class="m-auo" />
-            </div>
-
-        </div>
-        <div id="features" class="my-5 features">
-            <h1 class="w-text-color-default w-title-h2 text-center my-4">Features</h1>
-            <div class="bg-features row">
-                <div class="block-space">
-                    <div class="col-10 col-md-8 col-lg-7 col-xl-5">
-                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3"><span
-                                class="w-color-blue-dark">Wefty</span> to
-                            rock-n-roll !</h2>
-                        <div class="flex-wrap description">Wefty is the nickname of our NFT that represents both deposit
-                            and
-                            loan of
-                            a
-                            user. Any number of
-                            Wefties can be minted and they are transferable. That effectively decouple the account and
-                            our
-                            dApp.</div>
-                    </div>
-                </div>
-
-
-                <div class="block-space">
-                    <div class="col-10 col-md-8 col-lg-7 col-xl-5">
-                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3">Uncollaterized loan
-                            by <span class="w-color-green">delegation</span></h2>
-                        <div class="flex-wrap description">Wefties can be linked together in a Delegator-Delegatee
-                            relation.
-                            This
-                            allows uncollaterized loan for delegated Wefty. The delegator is able to set a debt ceiling
-                            for each delegatee by a fixed amount or by setting a maximum ratio relative to available
-                            collateral.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="block-space">
-                    <div class="col-10 col-md-8 col-lg-7 col-xl-5">
-                        <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3">Isolation mode, Efficiency
-                            mode and more ... All in <span class="w-color-pink">One Go !</span></h2>
-                        <div class="flex-wrap description">Flexible Collateral ratio configuration allowing borrowing
-                            power to not depend only on supplied asset but also on asset intended to be borrow.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
     <footer class="border-top">
         <div class="container py-3">
             <div class="d-flex justify-content-between m-auo">
                 <div class="d-flex flex-column">
                     <div class="d-flex flex-column flex-md-row justify-content-md-between me-3">
-                        <div><a href="#" target="_blank" class="w-text-color-default text-decoration-none">Policy</a>
-                        </div>
-                        <div><a href="#" target="_blank" class="w-text-color-default text-decoration-none">Terms</a>
-                        </div>
                         <div><a href="https://twitter.com/Weft_Finance" target="_blank"
                                 class="w-text-color-default text-decoration-none"><img
                                     src="assets/images/logo_twitter.png" /></a></div>
                     </div>
-                    <div class="mt-3 d-none d-md-block">
+                    <div class="mt-auto pe-5">
                         Copyright &copy; <span id="idYear"></span> Designed by SoftiLab
                     </div>
                 </div>
@@ -341,9 +337,6 @@
                             aria-label="weft logo" />
                     </a>
                 </div>
-            </div>
-            <div class="mt-3 d-block d-md-none">
-                Copyright &copy; <span id="idYear"></span> Designed by SoftiLab
             </div>
         </div>
     </footer>

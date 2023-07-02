@@ -34,32 +34,44 @@
     font-size: $fz-15;
     font-weight: 400;
   }
+
+  & + span {
+    font-size: $fz-15;
+    @media (max-width: 576px) {
+      font-size: $fz-13;
+    }
+  }
 }
 
 #idHomeCounterdown {
   @media (max-width: 576px) {
     margin: auto;
   }
+
+  animation: moveInRight 2s ease-out;
+}
+
+#idHomeSlogan {
+  animation: moveInBottom 2s ease-out 0.75;
+  animation-fill-mode: backwards;
 }
 
 #idHomeTitle {
   max-width: 30rem;
+  animation: moveInLeft 1s ease-out;
 }
 
-.btn.btn-primary {
-  background-color: $color-green;
+.btn.btn-primary,
+.btn.btn-primary.active {
+  background-color: $color-green !important;
+  color: $text-color-default !important;
 }
 
-.btn.btn-outline-info {
+.btn.btn-outline-info,
+.btn.btn-outline-info.active {
   color: $color-blue !important;
   border-color: $color-blue !important;
-  &:hover {
-    background-color: transparent !important;
-  }
-}
-
-.w-text-shadow {
-  text-shadow: 2px 2px rgba(30, 30, 30, 0.2);
+  background-color: transparent !important;
 }
 
 #idLastestUpdateLink {
@@ -119,12 +131,16 @@
     box-shadow: 0px 0px 40px 11px rgba(0, 0, 0, 0.07);
   }
 
+  .w-text-shadow {
+    text-shadow: 0px 2px 2px rgba(30, 30, 30, 0.2);
+  }
+
   .block-space {
     padding-left: 15rem;
     padding-top: 8rem;
 
     @media (max-width: 576px) {
-      padding-left: 5rem;
+      padding-left: 3rem;
       padding-top: 3rem;
       &:last-child {
         padding-bottom: 3rem;
