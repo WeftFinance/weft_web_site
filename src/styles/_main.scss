@@ -119,6 +119,14 @@
     line-height: normal;
     text-decoration-line: underline;
   }
+
+  .about-us-member {
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+    }
+  }
 }
 
 .features {
