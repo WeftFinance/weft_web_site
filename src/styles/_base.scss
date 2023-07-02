@@ -18,6 +18,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  color: $text-color-default;
 }
 
 main {
@@ -40,4 +41,50 @@ main {
 
 .w-color-blue-dark {
   color: $color-blue-dark;
+}
+
+.w-color-blue {
+  color: $color-blue;
+}
+
+.w-color-pink {
+  color: $color-pink;
+}
+
+.w-bg-color-green {
+  background-color: $color-green;
+}
+
+.w-radius-small {
+  border-radius: $radius-small;
+}
+
+.fz-25 {
+  font-size: $fz-25;
+}
+
+.w-title-h1 {
+  font-size: $fz-60;
+  font-weight: 700;
+
+  @media (max-width: 576px) {
+    font-size: $fz-40;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    font-size: $fz-30;
+  }
+}
+
+.w-title-h2 {
+  font-size: $fz-30;
+  font-weight: 700;
+
+  @media (max-width: 576px) {
+    font-size: $fz-20;
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    font-size: $fz-18;
+  }
 }
