@@ -61,6 +61,7 @@
   animation: moveInLeft 1s ease-out;
 }
 
+/* Start Bootstrap override*/
 .btn.btn-primary,
 .btn.btn-primary.active {
   background-color: $color-green !important;
@@ -73,6 +74,13 @@
   border-color: $color-blue !important;
   background-color: transparent !important;
 }
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+/* End Bootstrap override*/
 
 #idLastestUpdateLink {
   border-radius: $radius-small;
@@ -148,7 +156,8 @@
     padding-top: 8rem;
 
     @media (max-width: 576px) {
-      padding-left: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
       padding-top: 3rem;
       &:last-child {
         padding-bottom: 3rem;
