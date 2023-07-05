@@ -52,7 +52,7 @@
 }
 
 #idHomeSlogan {
-  animation: moveInBottom 1s ease-out 0.75;
+  animation: moveInBottom 2s ease-out 0.75;
   animation-fill-mode: backwards;
 }
 
@@ -151,7 +151,7 @@
     }
     @media (max-width: 375px) {
       background-size: cover;
-      background-image: url("assets/images/features_backr_pattern_mobile.svg");  
+      background-image: url("assets/images/features_backr_pattern_mobile.svg");
     }
   }
 
