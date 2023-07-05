@@ -6,10 +6,12 @@
     <title>Weft : A Comprehensive Solution for Crypto Lending and Borrowing on Radix DLT</title>
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Weft is a lending platform that leverages the features and capabilities of Radix DLT to provide a fast, secure, and flexible way of borrowing and lending assets. Weft is a multi asset over collateralized lending protocolSo multiple assets are listed for lenders to lend out their assets to borrowers. but borrowers will need to put collateral before getting loans.">
+    <meta name="description"
+        content="Weft is a lending platform that leverages the features and capabilities of Radix DLT to provide a fast, secure, and flexible way of borrowing and lending assets. Weft is a multi asset over collateralized lending protocolSo multiple assets are listed for lenders to lend out their assets to borrowers. but borrowers will need to put collateral before getting loans.">
     <meta name="robots" content="index,follow">
     <meta name="google-site-verification" content="SaptZVbIBXttn54j_m9fb7CSVWA0j2Lx8SIFadvLTuk" />
-    <meta name="keywords" content="weft, wefty, lending, borrowing , collateralized debt position, cdp, health factor, stablecoins , liquidation , radix, xrd, defi, market cap, assets" />
+    <meta name="keywords"
+        content="weft, wefty, lending, borrowing , collateralized debt position, cdp, health factor, stablecoins , liquidation , radix, xrd, defi, market cap, assets" />
     <link rel="icon" type="image/svg+xml" href="/assets/images/favicons/favicon.svg">
     <link rel="icon" type="image/png" href="/assets/images/favicons/favicon.png">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inter'>
@@ -17,11 +19,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="./styles.css" rel="stylesheet">
-        <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6FB67DV19S"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-6FB67DV19S');
@@ -34,7 +36,9 @@
             <div class="container">
                 <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
                     <img src="assets/images/logo_weft_finance_green.svg" alt="Weft logo" role="img"
-                        aria-label="weft logo" />
+                        aria-label="weft logo" class="d-none d-lg-inline-block" />
+                    <img src="assets/images/logo_weft_finance_green_mobile.svg" alt="Weft logo" role="img"
+                        aria-label="weft logo" class="d-inline-block d-lg-none" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -59,7 +63,7 @@
                         <li id="idLaunchApp" class="nav-item ms-auto pe-2 pe-sm-0">
                             <a href="https://poc.Weft.finance" target="_blank"
                                 class="nav-link btn btn-link btn-primary w-text-color-default w-radius-small">Launch
-                                App</a>
+                                demo</a>
                         </li>
                     </ul>
                 </div>
@@ -68,7 +72,10 @@
     </header>
     <main class="container mt-5 px-4 px-md-0">
         <div id="home">
-            <div class="row">
+            <div id="idHomeSlogan" class="row">
+                <img src="assets/images/slogan_weft.svg" alt="Weft slogan" class="m-auo" />
+            </div>
+            <div class="row mt-5 bg-white">
                 <div id="idHomeTitle" class="col-12 col-md-6">
                     <h2 class="col font-family-poppins w-title-h2">Welcome to a secure and user-friendly place
                         for Asset
@@ -80,54 +87,61 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-6 d-flex mt-5 mt-md-0 flex-grow-1">
-                    <div id="idHomeCounterdown" class="ms-md-auto">
+                    <div id="idHomeCounterdown" class="ms-md-auto w-radius-box py-3 px-5">
                         <div class="text-center mb-2"><img src="assets/images/logo_weft_green.svg" alt="Weft logo"
-                                role="img" aria-label="weft logo" />
-                        </div>
-                        <div id="idRadixBabylonCounterdown">
-                            <div class="text-center">dApp live in</div>
-                            <div class="row">
-                                <div class="col d-flex flex-column px-1">
-                                    <span id="idCounterdownDays" class="counterdown"></span>
-                                    <span class="fz-13">DAYS</span>
-                                </div>
-                                <div class="col d-flex flex-column px-1">
-                                    <span id="idCounterdownHours" class="counterdown"></span>
-                                    <span class="fz-13">HOURS</span>
-                                </div>
-                                <div class="col d-flex flex-column px-1">
-                                    <span id="idCounterdownMinutes" class="counterdown"></span>
-                                    <span class="fz-13">MINUTES</span>
-                                </div>
-                                <div class="col d-flex flex-column px-1">
-                                    <span id="idCounterdownSeconds" class="counterdown"></span>
-                                    <span class="fz-13">SECONDS</span>
-                                </div>
+                                role="img" aria-label="weft logo" class="d-none d-lg-inline-block" />
+                            <div class="text-center mb-2"><img src="assets/images/logo_weft_green_mobile.svg"
+                                    alt="Weft logo" role="img" aria-label="weft logo"
+                                    class="d-inline-block d-lg-none" />
                             </div>
-                            <div class="text-center mt-3">
-                                <a href="https://twitter.com/Weft_Finance" target="_blank"
-                                    class="btn btn-outline-info flex-inline text-decoration-none"><span>Latest
-                                        updates on</span><img class="ms-1" src="assets/images/logo_twitter.png"></a>
+                            <div id="idRadixBabylonCounterdown">
+                                <div class="text-center">dApp live in</div>
+                                <div class="row">
+                                    <div class="col d-flex flex-column px-1">
+                                        <span id="idCounterdownDays" class="counterdown"></span>
+                                        <span class="fz-13">DAYS</span>
+                                    </div>
+                                    <div class="col d-flex flex-column px-1">
+                                        <span id="idCounterdownHours" class="counterdown"></span>
+                                        <span class="fz-13">HOURS</span>
+                                    </div>
+                                    <div class="col d-flex flex-column px-1">
+                                        <span id="idCounterdownMinutes" class="counterdown"></span>
+                                        <span class="fz-13">MINUTES</span>
+                                    </div>
+                                    <div class="col d-flex flex-column px-1">
+                                        <span id="idCounterdownSeconds" class="counterdown"></span>
+                                        <span class="fz-13">SECONDS</span>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-3">
+                                    <a href="https://twitter.com/Weft_Finance" target="_blank"
+                                        class="btn btn-outline-info flex-inline text-decoration-none"><span>Latest
+                                            updates on</span><img class="ms-1" src="assets/images/logo_twitter.png"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="idHomeSlogan" class="row mt-5">
-                <img src="assets/images/slogan_weft.svg" alt="Weft slogan" class="m-auo" />
-            </div>
         </div>
+        <div class="d-flex justify-content-center">
+            <img src="assets/images/arrow_string_green.svg" alt="Weft Arrow Green" class="home-how-it-work-separator" />
         </div>
-        <div id="howItWorks" class="mt-5">
+        <div id="howItWorks" class="mt-3">
             <h1 class="w-text-color-default w-title-h2 text-center my-4">How it works</h1>
-            <div id="idHowItWorksImg" class="row">
-                <img src="assets/images/how_it_works_steps.svg" alt="Weft how it works" class="m-auo" />
+            <div id="idHowItWorksImg" class="d-flex justify-content-center w-radius-box ">
+                <img src="assets/images/how_it_works_steps.svg" alt="Weft how it works" class="d-none d-md-block" />
+                <img src="assets/images/how_it_works_steps_mobile.png" alt="Weft how it works"
+                    class="d-block d-md-none" />
             </div>
-
         </div>
-        <div id="features" class="mt-5 features">
-            <h1 class="w-text-color-default w-title-h2 text-center my-4">Features</h1>
-            <div class="bg-features row">
+        <div class="d-flex justify-content-center">
+            <img src="assets/images/arrow_string_pink.svg" alt="Weft Arrow Pink" />
+        </div>
+        <div id="features" class="mt-3 features">
+            <h1 class="w-text-color-default w-title-h2 text-center mt-4 mb-0">Features</h1>
+            <div class="bg-features pt-5 pt-md-0">
                 <div class="block-space">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-5">
                         <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3"><span
@@ -143,8 +157,6 @@
                             dApp.</div>
                     </div>
                 </div>
-
-
                 <div class="block-space">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-5">
                         <h2 class="w-title-h2 font-family-poppins w-text-shadow mb-3">Uncollaterized loan
@@ -170,24 +182,29 @@
                 </div>
             </div>
         </div>
-        <div id="aboutUs" class="my-5 about-us">
+        <div id="aboutUs" class="mt-3 about-us">
             <h1 class="w-text-color-default w-title-h2 text-center my-4">About us</h1>
             <div class="w-radius-box p-3 p-md-4 p-lg-5">
-                <div class="row">
-                    <div class="col-12 col-md-8">
+                <div class="row mb-4">
+                    <div class="col-12 col-md-6">
                         <div class="mb-4">
                             Hello! We are <b>Weft’ers</b> - a group of eight passionate people working together to build
                             the future of Decentralised Finance by offering accessible financial services to everyone.
                         </div>
-                        <div class="row mb-4">
-                            <div class="col-7 col-md-8">Weft Finance is a decentralised lending and borrowing platform
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-7 order-1 order-md-0 mb-4">Weft Finance is a
+                                decentralised
+                                lending and
+                                borrowing platform
                                 built on
                                 <a href="https://www.radixdlt.com/" target="_blank"
                                     class="w-text-color-default">RadixDLT</a>.
                             </div>
-                            <div class="col-5 col-md-4 row">
+                            <div class="col-12 col-md-6 col-lg-5 order-0 order-md-1 mb-4 text-center">
                                 <img src="assets/images/logo_weft_green.svg" alt="Weft logo" role="img"
-                                    aria-label="weft logo" />
+                                    aria-label="weft logo" class="d-none d-lg-inline-block" />
+                                <img src="assets/images/logo_weft_green_mobile.svg" alt="Weft logo" role="img"
+                                    aria-label="weft logo" class="d-inline-block d-lg-none" />
                             </div>
                         </div>
                         <div class="mb-4">
@@ -195,15 +212,15 @@
                             collateral for borrowing. It will allow users to securely lend and borrow digital assets
                             within the Radix ecosystem.  We are currently working on our MVP to be launched for Babylon.
                         </div>
-                        <div class="mb-4">
+                        <div class="d-flex justify-content-center justify-content-md-start">
                             <a href="https://twitter.com/Weft_Finance" target="_blank"
-                                class="btn btn-link flex-inline latest-new-link"><span>Follow us on
+                                class="btn btn-link flex-inline latest-new-link m-auo"><span>Follow us on
                                     Twitter
                                     to get latest news </span><img class="ms-1"
                                     src="assets/images/forward_arrows.svg"></a>
                         </div>
                     </div>
-                    <div class="d-none d-md-block col-4 text-center">
+                    <div class="d-none d-md-block col-md-6 text-center align-self-center">
                         <img src="assets/images/arrow_string_green.svg" alt="Weft Arrow" />
                     </div>
                 </div>
@@ -251,7 +268,7 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column my-4 about-us-member">
-                        <div><img src="assets/images/photo_maxence.png" alt="Weft Co Founder" class="photo" /></div>
+                        <div><img src="assets/images/photo_maxence.jpeg" alt="Weft Co Founder" class="photo" /></div>
                         <div class="text-center">
                             <div class="fw-bold my-2">
                                 Maxence
@@ -328,6 +345,9 @@
         </div>
         </div>
         </div>
+        <div class="d-flex justify-content-center mt-3 mb-4">
+            <img src="assets/images/arrow_string_blue.svg" alt="Weft Arrow Blue" />
+        </div>
     </main>
     <footer class="border-top">
         <div class="container py-3">
@@ -345,7 +365,9 @@
                 <div>
                     <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
                         <img src="assets/images/logo_weft_finance_green.svg" alt="Weft logo" role="img"
-                            aria-label="weft logo" />
+                            aria-label="weft logo" class="d-none d-lg-inline-block" />
+                        <img src="assets/images/logo_weft_finance_green_mobile.svg" alt="Weft logo" role="img"
+                            aria-label="weft logo" class="d-inline-block d-lg-none" />
                     </a>
                 </div>
             </div>

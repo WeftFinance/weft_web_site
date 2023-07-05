@@ -44,7 +44,7 @@
 }
 
 #idHomeCounterdown {
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     margin: auto;
   }
 
@@ -52,13 +52,13 @@
 }
 
 #idHomeSlogan {
-  animation: moveInBottom 2s ease-out 0.75;
+  animation: moveInBottom 1s ease-out 0.75;
   animation-fill-mode: backwards;
 }
 
 #idHomeTitle {
   max-width: 30rem;
-  animation: moveInLeft 1s ease-out;
+  animation: moveInLeft 2s ease-out;
 }
 
 /* Start Bootstrap override*/
@@ -85,10 +85,6 @@
 #idLastestUpdateLink {
   border-radius: $radius-small;
   border: 1px solid #1d9bf0;
-}
-
-#idHowItWorksImg {
-  background: linear-gradient(180deg, #2007cd 0%, #5afbc4 100%);
 }
 
 .about-us {
@@ -126,6 +122,13 @@
     font-weight: 900;
     line-height: normal;
     text-decoration-line: underline;
+
+    span {
+      @media (max-width: 576px) {
+        width: 10rem;
+        display: flex;
+      }
+    }
   }
 
   .about-us-member {
@@ -139,12 +142,17 @@
 
 .features {
   .bg-features {
-    background: linear-gradient(
-      180deg,
-      #5afbc4 0%,
-      rgba(255, 0, 242, 0.14) 100%
-    );
-    box-shadow: 0px 0px 40px 11px rgba(0, 0, 0, 0.07);
+    background-image: url("assets/images/features_backr_pattern.svg");
+    background-size: contain;
+    background-repeat: repeat;
+
+    @media (max-width: 576px) {
+      background-image: url("assets/images/features_backr_pattern_mobile.svg");
+    }
+    @media (max-width: 375px) {
+      background-size: cover;
+      background-image: url("assets/images/features_backr_pattern_mobile.svg");  
+    }
   }
 
   .w-text-shadow {
@@ -189,4 +197,13 @@
   bottom: 20px;
   right: 20px;
   display: none;
+}
+
+.home-how-it-work-separator {
+  margin-top: -8rem;
+  z-index: -10;
+  @media (max-width: 576px) {
+    margin-top: -8rem;
+    z-index: -10;
+  }
 }
