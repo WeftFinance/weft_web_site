@@ -108,19 +108,6 @@
     }
   }
 
-  .photo {
-    width: 10rem;
-    height: 10rem;
-    flex-shrink: 0;
-    border-radius: $radius-medium;
-    box-shadow: 0px 0px 40px 11px rgba(0, 0, 0, 0.07);
-
-    @media (max-width: 768px) {
-      width: 8rem;
-      height: 8rem;
-    }
-  }
-
   .latest-new-link {
     color: $text-color-default;
     font-size: $fz-18;
@@ -143,14 +130,38 @@
     &:hover {
       transform: translateY(-1.5rem) scale(1.03);
     }
+
+    .photo {
+      width: 10rem;
+      height: 10rem;
+      flex-shrink: 0;
+      border-radius: $radius-medium;
+      box-shadow: 0px 0px 40px 11px rgba(0, 0, 0, 0.07);
+
+      @media (max-width: 768px) {
+        width: 8rem;
+        height: 8rem;
+      }
+
+      @media (max-width: 320px) {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+
+    .text-center {
+      @media (max-width: 320px) {
+        font-size: $fz-14;
+      }
+    }
   }
 }
 
 .features {
   .bg-features {
     background-image: url("assets/images/features_backr_pattern.svg");
-    background-size: contain;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     @media (max-width: 576px) {
       background-image: url("assets/images/features_backr_pattern_mobile.svg");
@@ -166,7 +177,8 @@
   }
 
   .block-space {
-    padding-left: 15rem;
+    display: flex;
+    justify-content: center;
     padding-top: 8rem;
 
     @media (max-width: 576px) {
@@ -174,20 +186,35 @@
       padding-right: 2rem;
       padding-top: 3rem;
       &:last-child {
-        padding-bottom: 3rem;
+        padding-bottom: 3rem !important;
+      }
+    }
+
+    @media (max-width: 320px) {
+      &:last-child {
+        padding-bottom: 6rem !important;
       }
     }
 
     @media (min-width: 576px) and (max-width: 768px) {
-      padding-left: 8rem;
       padding-top: 6rem;
       &:last-child {
-        padding-bottom: 6rem;
+        padding-bottom: 6rem !important;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      &:first-child {
+        padding-top: 10rem !important;
       }
     }
 
     &:last-child {
-      padding-bottom: 8rem;
+      padding-bottom: 6rem;
+    }
+
+    div {
+      max-width: 30rem;
     }
   }
 
@@ -217,5 +244,16 @@
 .arrow-separator {
   @media (max-width: 576px) {
     width: 6rem;
+  }
+}
+
+.copyright {
+  padding-right: 6rem;
+
+  @media (max-width: 375px) {
+    padding-right: 2rem;
+  }
+  @media (max-width: 320px) {
+    padding-right: 1rem !important;
   }
 }
