@@ -24,13 +24,13 @@ pnpm install
 ```
 
 ```
-pnpm watch-css
+pnpm start
 ```
 
-and go in the folder public, launch other terminal with:
+### Production
 
 ```
-live-server
+pnpm build or npm run build
 ```
 
 # Add Vuejs or Angular or React or Svelte or other when use dynamics datas on the website
