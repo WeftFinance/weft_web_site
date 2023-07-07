@@ -7,13 +7,9 @@
 }
 
 #idHeaderNavbar {
-  margin-left: 8rem;
-
-  // .nav-item {
-  //   @media (min-width: 576px) {
-  //     margin-left: auto;
-  //   }
-  // }
+  @media (min-width: 992px) {
+    margin-left: 8rem;
+  }
 }
 
 #idLaunchApp {
