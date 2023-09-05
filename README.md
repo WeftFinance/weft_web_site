@@ -32,5 +32,3 @@ pnpm start
 ```
 pnpm build or npm run build
 ```
-
-# Add Vuejs or Angular or React or Svelte or other when use dynamics datas on the website
